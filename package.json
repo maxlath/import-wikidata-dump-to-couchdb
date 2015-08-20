@@ -1,0 +1,16 @@
+{
+  "name": "couch-wikidata-dump-importer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/couch-wikidata-dump-importer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf build; coffee -o build -c src"
+  },
+  "author": "maxlath",
+  "license": "MIT",
+  "dependencies": {
+    "bluereq": "^0.2.1",
+    "config": "^1.15.0"
+  }
+}
