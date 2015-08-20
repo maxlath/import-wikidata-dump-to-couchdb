@@ -20,7 +20,7 @@ This new file isnt valid json, but every new line is, once you remove the coma a
 node ./build/couch-wikidata-dump-importer.js ./isWriter.json
 ```
 
-There is probably more efficient ways to do that (using batches maybe?), but well, that one solution
+There are probably more efficient ways to do that (using batches maybe?), but well, that's one solution
 
 
 ### License
