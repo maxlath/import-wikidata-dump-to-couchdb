@@ -13,5 +13,8 @@
   "dependencies": {
     "bluereq": "^0.2.1",
     "config": "^1.15.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.3"
   }
 }
