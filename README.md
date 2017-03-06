@@ -14,6 +14,9 @@ a tool to transfer an extract of a [wikidata dump](https://www.wikidata.org/wiki
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+## Dependency
+* [NodeJS](https://nodejs.org)
+
 ## How to
 ### Download dump
 Download [Wikidata latest dump](https://www.wikidata.org/wiki/Wikidata:Database_download#JSON_dumps_.28recommended.29)
@@ -37,8 +40,10 @@ cat dump.json | wikidata-filter --claim P106:Q36180' > isWriter.json
 
 ### Import
 This new file isnt valid json (it's [line-delimited JSON](https://en.wikipedia.org/wiki/JSON_Streaming#Line_delimited_JSON)), but every new line is, once you remove the coma at the end of the line, so here is the plan: take every line, remove the coma, PUT it in your database:
-```
-node ./build/couch-wikidata-dump-importer.js ./isWriter.json
+```sh
+./import.js ./isWriter.json
+# OR
+npm run import ./isWriter.json
 ```
 
 There are probably more efficient ways to do that (using batches maybe?), but well, that's one solution
