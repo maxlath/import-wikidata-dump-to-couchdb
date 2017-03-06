@@ -5,6 +5,8 @@ a tool to transfer an extract of a [wikidata dump](https://www.wikidata.org/wiki
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
+- [Dependency](#dependency)
+- [Installation](#installation)
 - [How to](#how-to)
   - [Download dump](#download-dump)
   - [Extract subset](#extract-subset)
@@ -16,6 +18,12 @@ a tool to transfer an extract of a [wikidata dump](https://www.wikidata.org/wiki
 
 ## Dependency
 * [NodeJS](https://nodejs.org)
+
+## Installation
+```sh
+git clone https://github.com/maxlath/couch-wikidata-dump-importer
+cd couch-wikidata-dump-importer
+```
 
 ## How to
 ### Download dump
