@@ -1,4 +1,4 @@
-const reader = require('./reader')
+const reader = require('./lib/reader')
 const breq = require('bluereq')
 const CONFIG = require('config')
 const dbUrl = CONFIG.db.dbUrl()

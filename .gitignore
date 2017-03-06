@@ -1,3 +1,4 @@
-config/local.coffee
+config/local.js
 node_modules
+npm-debug.log
 
