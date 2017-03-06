@@ -49,8 +49,10 @@ npm run import ./isWriter.json
 There are probably more efficient ways to do that (using batches maybe?), but well, that's one solution
 
 ### See also
-* [wikidata-filter](https://github.com/maxlath/wikidata-filter)
-* [wikidata-subset-search-engine](https://github.com/inventaire/wikidata-subset-search-engine)
+* [wikidata-filter](https://github.com/maxlath/wikidata-filter): a command-line tool to filter a Wikidata dump by claim
+* [wikidata-subset-search-engine](https://github.com/inventaire/wikidata-subset-search-engine): tools to setup an ElasticSearch instance fed with subsets of Wikidata
+* [wikidata-sdk](https://github.com/maxlath/wikidata-sdk): a javascript tool-suite to query Wikidata and simplify its results
+* [wikidata-cli](https://github.com/maxlath/wikidata-cli): read and edit Wikidata from the command line
 
 ### License
 
