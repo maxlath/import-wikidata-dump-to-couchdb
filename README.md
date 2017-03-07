@@ -60,9 +60,10 @@ This new file isnt valid json (it's [line-delimited JSON](https://en.wikipedia.o
 
 #### Specify start and end line numbers:
 ```sh
-# Start line 5
-# End line 7 (the line 7 will be included)
-./import.js ./isWriter.json 5 7
+startline=5
+# the line 10 will be included
+endline=10
+./import.js ./isWriter.json $startline $endline
 ```
 
 ### See also
