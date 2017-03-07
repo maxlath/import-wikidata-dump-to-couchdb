@@ -6,6 +6,8 @@ module.exports = {
     username: 'yourcouchdbusername',
     password: 'yourcouchdbpassword',
     dbName: 'authors',
-    dbUrl: () => `${this.protocol}://${this.username}:${this.password}@${this.host}:${this.port}/${this.dbName}`
+    dbUrl: function () {
+     return `${this.protocol}://${this.username}:${this.password}@${this.host}:${this.port}/${this.dbName}`
+    }
   }
 }
