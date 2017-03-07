@@ -1,4 +1,6 @@
-a tool to transfer an extract of a [wikidata dump](https://www.wikidata.org/wiki/Wikidata:Database_download#JSON_dumps_.28recommended.29) into a [CouchDB](couchdb.org) database
+# import-wikidata-dump-to-couchdb
+
+A tool to transfer an extract of a [wikidata dump](https://www.wikidata.org/wiki/Wikidata:Database_download#JSON_dumps_.28recommended.29) into a [CouchDB](couchdb.org) database
 
 ## Summary
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -22,8 +24,8 @@ a tool to transfer an extract of a [wikidata dump](https://www.wikidata.org/wiki
 
 ## Installation
 ```sh
-git clone https://github.com/maxlath/couch-wikidata-dump-importer
-cd couch-wikidata-dump-importer
+git clone https://github.com/maxlath/import-wikidata-dump-to-couchdb
+cd import-wikidata-dump-to-couchdb
 npm install
 ```
 
