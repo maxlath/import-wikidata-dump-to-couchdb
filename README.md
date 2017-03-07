@@ -20,7 +20,7 @@ A tool to transfer an extract of a [wikidata dump](https://www.wikidata.org/wiki
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Dependency
-* [NodeJS](https://nodejs.org)
+* [NodeJS](https://nodejs.org) **>= v6**. If your distribution doesn't provide an recent version of NodeJS, you might want to uninstall NodeJS and reinstall it using [NVM](https://github.com/xtuple/nvm)
 
 ## Installation
 ```sh
