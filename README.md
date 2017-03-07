@@ -43,7 +43,7 @@ Here the trick is that every entity with occupation-> writer (P106->Q36180) will
 
 **But** now, we can do something cleaner using [wikidata-filter](https://github.com/maxlath/wikidata-filter):
 ```sh
-cat dump.json | wikidata-filter --claim P106:Q36180' > isWriter.json
+cat dump.json | wikidata-filter --claim P106:Q36180 > isWriter.json
 ```
 
 ### Import
