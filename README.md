@@ -23,6 +23,7 @@ a tool to transfer an extract of a [wikidata dump](https://www.wikidata.org/wiki
 ```sh
 git clone https://github.com/maxlath/couch-wikidata-dump-importer
 cd couch-wikidata-dump-importer
+npm install
 ```
 
 ## How to
