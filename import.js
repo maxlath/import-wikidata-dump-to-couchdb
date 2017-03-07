@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const reader = require('./lib/reader')
 const putDocFromLine = require('./put_doc_from_line')
 
