@@ -6,11 +6,13 @@ module.exports = {
     username: 'yourcouchdbusername',
     password: 'yourcouchdbpassword',
     dbName: 'authors',
-    dbUrl: function () {
-     return `${this.protocol}://${this.username}:${this.password}@${this.host}:${this.port}/${this.dbName}`
+    url: function () {
+      return `${this.protocol}://${this.username}:${this.password}@${this.host}:${this.port}/${this.dbName}`
     },
-    dbUrlWithoutCrendentials: function () {
+    urlWithoutCrendentials: function () {
       return `${this.protocol}://${this.host}:${this.port}/${this.dbName}`
-   }
-  }
+    }
+  },
+  // Possible options: pass, update, exit
+  onConflict: 'update'
 }

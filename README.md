@@ -14,6 +14,7 @@ A tool to transfer an extract of a [wikidata dump](https://www.wikidata.org/wiki
   - [Extract subset](#extract-subset)
   - [Import](#import)
     - [Specify start and end line numbers:](#specify-start-and-end-line-numbers)
+    - [Behavior on conflict](#behavior-on-conflict)
   - [See also](#see-also)
   - [License](#license)
 
@@ -65,6 +66,10 @@ startline=5
 endline=10
 ./import.js ./isWriter.json $startline $endline
 ```
+
+#### Behavior on conflict
+In the config file (`./config/default.js`), you can set the behavior on conflict, that is, when the importers tries to add an entity that was already previously added to CouchDB: `update`, `pass`, or `exit`.
+Defaults to `update` as it's smart enough to pass documents that don't have changed.
 
 ### See also
 * [wikidata-filter](https://github.com/maxlath/wikidata-filter): a command-line tool to filter a Wikidata dump by claim
