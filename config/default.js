@@ -8,6 +8,9 @@ module.exports = {
     dbName: 'authors',
     dbUrl: function () {
      return `${this.protocol}://${this.username}:${this.password}@${this.host}:${this.port}/${this.dbName}`
-    }
+    },
+    dbUrlWithoutCrendentials: function () {
+      return `${this.protocol}://${this.host}:${this.port}/${this.dbName}`
+   }
   }
 }
