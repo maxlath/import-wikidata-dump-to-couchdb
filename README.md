@@ -68,8 +68,11 @@ endline=10
 ```
 
 #### Behavior on conflict
-In the config file (`./config/default.js`), you can set the behavior on conflict, that is, when the importers tries to add an entity that was already previously added to CouchDB: `update`, `pass`, or `exit`.
-Defaults to `update` as it's smart enough to pass documents that don't have changed.
+In the config file (`./config/default.js`), you can set the behavior on conflict, that is, when the importers tries to add an entity that was already previously added to CouchDB:
+
+* `update` (default): update document if there is a change, otherwise pass.
+* `pass`: always pass
+* `exit`: exit process at first conflict
 
 ### See also
 * [wikidata-filter](https://github.com/maxlath/wikidata-filter): a command-line tool to filter a Wikidata dump by claim
