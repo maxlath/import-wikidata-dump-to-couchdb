@@ -11,6 +11,7 @@ a tool to transfer an extract of a [wikidata dump](https://www.wikidata.org/wiki
   - [Download dump](#download-dump)
   - [Extract subset](#extract-subset)
   - [Import](#import)
+    - [Specify start and end line numbers:](#specify-start-and-end-line-numbers)
   - [See also](#see-also)
   - [License](#license)
 
@@ -51,11 +52,14 @@ cat dump.json | wikidata-filter --claim P106:Q36180 > isWriter.json
 This new file isnt valid json (it's [line-delimited JSON](https://en.wikipedia.org/wiki/JSON_Streaming#Line_delimited_JSON)), but every new line is, once you remove the coma at the end of the line, so here is the plan: take every line, remove the coma, PUT it in your database:
 ```sh
 ./import.js ./isWriter.json
-# OR
-npm run import ./isWriter.json
 ```
 
-There are probably more efficient ways to do that (using batches maybe?), but well, that's one solution
+#### Specify start and end line numbers:
+```sh
+# Start line 5
+# End line 7 (the line 7 will be included)
+./import.js ./isWriter.json 5 7
+```
 
 ### See also
 * [wikidata-filter](https://github.com/maxlath/wikidata-filter): a command-line tool to filter a Wikidata dump by claim
