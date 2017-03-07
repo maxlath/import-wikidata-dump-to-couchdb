@@ -29,6 +29,8 @@ cd import-wikidata-dump-to-couchdb
 npm install
 ```
 
+Now you can customize `./config/default.js` to your needs.
+
 ## How to
 ### Download dump
 Download [Wikidata latest dump](https://www.wikidata.org/wiki/Wikidata:Database_download#JSON_dumps_.28recommended.29)
