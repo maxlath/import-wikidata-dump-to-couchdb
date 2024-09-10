@@ -2,6 +2,16 @@
 
 A tool to transfer an extract of a [wikidata dump](https://www.wikidata.org/wiki/Wikidata:Database_download#JSON_dumps_.28recommended.29) into a [CouchDB](couchdb.org) database
 
+----
+## 2024 archive note
+
+> This tool was a bit of a naive implementation; if I wanted to do that today, I would do it differently, and make sure to use CouchDB bulk mode:
+> * Get a [wikidata json dump](https://dumps.wikimedia.org/wikidatawiki/entities/)
+> * Optionally, [filter](https://github.com/maxlath/wikibase-dump-filter) to get the desired subset. In any case, turn the dump into valid NDJSON (drop the first and last lines and the comma at the end of each lines).
+> * Pass each entity through a function to move the "id" attribute to "_id", using https://github.com/maxlath/ndjson-apply, to match CouchDB requirements.
+> * Bulk upload the result to CouchDB using https://github.com/maxlath/couchdb-bulk2
+----
+
 ## Summary
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
